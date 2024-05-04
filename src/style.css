@@ -1,0 +1,122 @@
+body {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #EBEBEB;
+  color: #333333; /* Cor padrão do texto */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.dark-mode body {
+  background-color: #121212; /* Fundo escuro */
+  color: #FFFFFF; /* Texto branco */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  color: #060606;
+  text-transform: uppercase;
+  margin-bottom: 1.5em;
+}
+
+.message-container {
+  margin-top: 2rem;
+}
+
+.message {
+  padding: 1rem;
+  color: inherit; /* Herda a cor do texto do elemento pai */
+  font-weight: 600;
+  background-color: #1E91FE; /* Cor padrão do fundo das mensagens */
+  border-radius: 0.25rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem; /* Espaço entre as mensagens */
+}
+
+.dark-mode .message {
+  background-color: #6B3FA0; /* Cor roxa para o fundo das mensagens no modo escuro */
+}
+
+.message > .content {
+  grid-area: content;
+}
+
+.message > button {
+  grid-area: button;
+  justify-self: end;
+  font-size: 0.75em;
+  padding: 0.5em 1em;
+  border-radius: 0.25rem;
+  background-color: #201E1E;
+  color: #F3F3F3;
+  border: none;
+  cursor: pointer;
+}
+
+.message > button::before {
+  content: "- ";
+}
+
+.dark-mode .message > button {
+  background-color: #333333; /* Cor mais escura para botões no modo escuro */
+  color: #FFFFFF; /* Texto branco para botões no modo escuro */
+}
+
+/* Estilos para botões no modo claro */
+button, input[type="button"] {
+  padding: 0.5em 1em;
+  margin-right: 0.5em; /* Adiciona espaço entre os botões */
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #1E91FE;
+  color: #FFFFFF;
+  font-size: 0.75em;
+  cursor: pointer;
+}
+
+/* Estilos para botões no modo escuro */
+.dark-mode button, .dark-mode input[type="button"] {
+  background-color: #333333;
+  color: #FFFFFF;
+}
+
+/* Estilos para o campo de entrada no modo claro */
+input[type="text"] {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+/* Estilos para o campo de entrada no modo escuro */
+.dark-mode input[type="text"] {
+  background-color: #333333;
+  color: #FFFFFF;
+  border-color: #666666;
+}
+
+/* Estilos para o container de mensagens */
+.message-container {
+  margin-top: 2rem;
+}
+
+/* Estilos para as mensagens */
+.message {
+  padding: 1rem;
+  color: #FFFFFF; /* Texto branco */
+  font-weight: 600;
+  background-color: #1e2e94; /* Cinza escuro */
+  border-radius: 0.25rem;
+  box-shadow: 0.5rem 0.5rem 2rem rgba(0, 0, 0, 0.5);
+  margin-bottom: 1rem; /* Espaço entre as mensagens */
+}
+
+/* Estilos para as mensagens no modo escuro */
+.dark-mode .message {
+  background-color: #6B3FA0; /* Cor roxa para o fundo das mensagens no modo escuro */
+}
+
